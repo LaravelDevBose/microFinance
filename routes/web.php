@@ -26,5 +26,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 /*======== Admin Route List ===============*/
 
 Route::prefix('merchantile')->group( function(){
-    R
+    Route::get('login', 'Auth/AdminLoginController@showLoginFrom')->name('admin.login');
 });
