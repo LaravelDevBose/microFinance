@@ -1348,4 +1348,16 @@ class Blueprint
             return (bool) $column->change;
         });
     }
+
+    /**
+     * Adds the `remember_token` column to the table.
+     *
+     * @return \Illuminate\Support\Fluent
+     */
+    public function created_updated_by()
+    {
+        $this->string('created_by', 255)->nullable();
+
+        $this->string('updated_by', 255)->nullable();
+    }
 }

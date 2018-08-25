@@ -4,13 +4,15 @@ namespace App\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Auth;
 
 class AdminLoginController extends Controller
 {
 
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+        $this->middleware('guest:admin',['except'=>['logout']]);
     }
 
     /**
@@ -23,36 +25,40 @@ class AdminLoginController extends Controller
         return view('admin.auth.login');
     }
 
-    /**
-     * Handle a login request to the application.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Http\JsonResponse
-     *
-     * @throws \Illuminate\Validation\ValidationException
-     */
-    public function login(Request $request)
+    public function login( Request $request){
+        //Validate the form date
+        $this->validate($request, [
+            'identity'=>'required',
+            'password'=>'required|min:6',
+        ]);
+        //attempt to log the user in
+        if (Auth::guard('admin')->attempt([$this->username()=>$request->identity, 'password'=>$request->password], $request->remember)) {
+            //if Sucessfull, than redirect to their intended location
+            return redirect()->intended(route('dashboard'));
+        }
+
+        //if Unsucessfull, then redirect back to their login with the form data
+        return redirect()->back()->with('unsucces', 'Email Or UserName And Password Not Match !');
+    }
+
+
+
+    public function logout()
     {
-        $this->validateLogin($request);
+        Auth::guard('admin')->logout();
+        return redirect()->route('admin.login');
+    }
 
-        // If the class is using the ThrottlesLogins trait, we can automatically throttle
-        // the login attempts for this application. We'll key this by the username and
-        // the IP address of the client making these requests into this application.
-        if ($this->hasTooManyLoginAttempts($request)) {
-            $this->fireLockoutEvent($request);
 
-            return $this->sendLockoutResponse($request);
-        }
-
-        if ($this->attemptLogin($request)) {
-            return $this->sendLoginResponse($request);
-        }
-
-        // If the login attempt was unsuccessful we will increment the number of attempts
-        // to login and redirect the user back to the login form. Of course, when this
-        // user surpasses their maximum number of attempts they will get locked out.
-        $this->incrementLoginAttempts($request);
-
-        return $this->sendFailedLoginResponse($request);
+    /**
+     * Check either username or email.
+     * @return string
+     */
+    public function username()
+    {
+        $identity  = request()->get('identity');
+        $fieldName = filter_var($identity, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
+        request()->merge([$fieldName => $identity]);
+        return $fieldName;
     }
 }

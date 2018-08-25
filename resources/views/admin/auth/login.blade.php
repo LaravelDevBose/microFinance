@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>Micro Finance | Admin Login</title>
 
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -49,19 +50,20 @@
                     <div class="panel panel-body ">
                         <div class="col-md-6"></div>
                         <div class="col-md-6">
-                            <form action="index.html" class="form-validate">
+                            <form action="{{ route('admin.login') }}" method="POST" class="form-validate">
+                                {{ csrf_field() }}
                                 <div class="text-center">
                                     <div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
                                     <h5 class="content-group">Login to your account <small class="display-block">Your credentials</small></h5>
                                 </div>
                                 <div class="form-group has-feedback has-feedback-left">
-                                    <input type="text" class="form-control" placeholder="Username" name="username" required="required">
+                                    <input type="text" class="form-control" placeholder="Username" name="identity" required="required">
                                     <div class="form-control-feedback">
                                         <i class="icon-user text-muted"></i>
                                     </div>
                                 </div>
                                 <div class="form-group has-feedback has-feedback-left">
-                                    <input type="password" class="form-control" placeholder="Password" name="password" required="required">
+                                    <input type="password" class="form-control" placeholder="Password" name="password" minlength="6" required="required">
                                     <div class="form-control-feedback">
                                         <i class="icon-lock2 text-muted"></i>
                                     </div>
