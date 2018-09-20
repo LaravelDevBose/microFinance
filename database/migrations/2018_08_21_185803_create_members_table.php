@@ -15,6 +15,17 @@ class CreateMembersTable extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('m_name');
+            $table->string('father_name')->nullable();
+            $table->string('mother_name')->nullable();
+            $table->string('spouce_name')->nullable();
+            $table->string('dob');
+            $table->string('nid_number');
+            $table->string('phone_number');
+            $table->string('email')->nullable();
+            $table->text('present_address')->nullable();
+            $table->text('premanent_address')->nullable();
+            $table->created_updated_by();
             $table->timestamps();
         });
     }

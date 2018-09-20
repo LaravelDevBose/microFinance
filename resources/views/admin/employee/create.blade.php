@@ -57,7 +57,7 @@
                             <div class="form-group">
                                 <label>Designation: <span class="text-danger">*</span></label>
                                 <div class="input-group-xs">
-                                    <select name="desig" data-placeholder="Select a Designation" required class="select required">
+                                    <select name="desig_id" data-placeholder="Select a Designation" required class="select required">
                                         <option></option>
                                         <optgroup label="North America">
                                             <option value="1">United States</option>
@@ -69,7 +69,7 @@
                             <div class="form-group">
                                 <label>Department: <span class="text-danger">*</span></label>
                                 <div class="input-group-xs">
-                                    <select name="department" data-placeholder="Select a Department" required class="select required">
+                                    <select name="dept_id" data-placeholder="Select a Department" required class="select required">
                                         <option></option>
                                         <optgroup label="North America">
                                             <option value="1">United States</option>
@@ -124,7 +124,7 @@
                             <div class="form-group  has-feedback">
                                 <label>Date Of Birth: <span class="text-danger">*</span></label>
                                 <div class="input-group input-group-xs">
-                                    <input type="text" name="joining_date" class="form-control datepicker required " required placeholder="Joining Date">
+                                    <input type="text" name="dob" class="form-control datepicker required " required placeholder="Joining Date">
                                     <span class="input-group-addon datepicker"><i class="icon-calendar2"></i></span>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
                             <div class="form-group">
                                 <label>Gender: <span class="text-danger">*</span></label>
                                 <div class="input-group-xs">
-                                    <select name="desig" data-placeholder="Select a Designation" required class="select required">
+                                    <select name="gender" data-placeholder="Select a Designation" required class="select required">
                                         <option></option>
                                         <optgroup label="North America">
                                             <option value="1">United States</option>
@@ -155,7 +155,7 @@
                             <div class="form-group">
                                 <label>Marital Status: <span class="text-danger">*</span></label>
                                 <div class="input-group-xs">
-                                    <select name="desig" data-placeholder="Select a Designation" required class="select required">
+                                    <select name="marital_status" data-placeholder="Select a Designation" required class="select required">
                                         <option></option>
                                         <optgroup label="North America">
                                             <option value="1">United States</option>
@@ -210,7 +210,7 @@
 
                             <div class="form-group">
                                 <label>Permanent Address: </label>
-                                <textarea name="per_address" rows="4" cols="4" placeholder="Employee Permanent Address" class="form-control input-sm"></textarea>
+                                <textarea name="parmanent_address" rows="4" cols="4" placeholder="Employee Permanent Address" class="form-control input-sm"></textarea>
                             </div>
                         </div>
 

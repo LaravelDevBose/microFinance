@@ -38,7 +38,7 @@
                                 <label class="col-lg-3 control-label" >IE Head: <span class="text-danger text-bold ">*</span></label>
                                 <div class="col-md-8">
                                     <div class="input-group-xs">
-                                        <input type="text" name="IE_head" class="form-control required " required placeholder="IE Transition Head">
+                                        <input type="text" name="iE_head" class="form-control required " required placeholder="IE Transition Head">
                                     </div>
                                 </div>
                             </div>

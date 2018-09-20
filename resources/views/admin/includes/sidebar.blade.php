@@ -5,21 +5,24 @@
         <div class="sidebar-user">
             <div class="category-content">
                 <div class="media">
-                    <a href="#" class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+                    <a href="#" class="media-left">
+                        <?php $avater = Auth::user()->avater;   if(!file_exists($avater)){ $avater = 'public/images/default/user_profile.jpg'; }?>
+                        <img src="{{ asset($avater) }}" class="img-circle img-sm" alt="">
+                    </a>
                     <div class="media-body">
-                        <span class="media-heading text-semibold">Victoria Baker</span>
+                        <span class="media-heading text-semibold">{{ Auth::user()->full_name }}</span>
                         <div class="text-size-mini text-muted">
-                            <i class="icon-pin text-size-small"></i> &nbsp;Santa Ana, CA
+                            <i class="icon-user-check text-size-small"></i> {{ Auth::User()->username }}
                         </div>
                     </div>
 
-                    <div class="media-right media-middle">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><i class="icon-cog3"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+                    {{--<div class="media-right media-middle">--}}
+                        {{--<ul class="icons-list">--}}
+                            {{--<li>--}}
+                                {{--<a href="#"><i class="icon-cog3"></i></a>--}}
+                            {{--</li>--}}
+                        {{--</ul>--}}
+                    {{--</div>--}}
                 </div>
             </div>
         </div>

@@ -109,8 +109,9 @@
             </li>
             <li class="dropdown dropdown-user">
                 <a class="dropdown-toggle" data-toggle="dropdown">
-                    <img src="{{ asset('public/backend/assets/images/placeholder.jpg') }}" alt="">
-                    <span>Victoria</span>
+                    <?php $avater = Auth::user()->avater;   if(!file_exists($avater)){ $avater = 'public/images/default/user_profile.jpg'; }?>
+                    <img src="{{ asset($avater) }}" alt="Avater">
+                    <span>{{ Auth::user()->full_name }}</span>
                     <i class="caret"></i>
                 </a>
 
