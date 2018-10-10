@@ -21,6 +21,7 @@
     <script type="text/javascript" src="{{ asset('public/backend/assets/js/core/libraries/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('public/backend/assets/js/core/libraries/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('public/backend/assets/js/plugins/loaders/blockui.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('public/backend/assets/js/sweetAlert/sweetalert.min.js') }}"></script>
     <!-- /core JS files -->
     @yield('assetFile')
 
@@ -49,7 +50,9 @@
 
         <!-- Main content -->
         <div class="content-wrapper">
-
+            <div class="content" style="padding-top:0px;  padding:5px 20px 10px 20px; ">
+            @include('admin.includes.message')
+            </div>
             <!-- Content area -->
             @yield('content')
             <!-- /content area -->
@@ -67,5 +70,7 @@
 </div>
 <!-- /page container -->
 @yield('custom_script')
+
+
 </body>
 </html>

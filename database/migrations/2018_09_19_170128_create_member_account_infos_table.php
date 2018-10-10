@@ -15,7 +15,7 @@ class CreateMemberAccountInfosTable extends Migration
     {
         Schema::create('member_account_infos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('m_id');
+            $table->string('mem_code');
             $table->unsignedInteger('member_id');
             $table->unsignedInteger('instalment_type');
             $table->unsignedInteger('inst_amount');

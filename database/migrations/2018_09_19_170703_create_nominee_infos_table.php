@@ -21,6 +21,7 @@ class CreateNomineeInfosTable extends Migration
             $table->string('n_phone_number')->nullable();
             $table->string('n_email')->nullable();
             $table->string('n_address');
+            $table->text('n_image')->nullable();
             $table->timestamps();
         });
     }

@@ -1062,7 +1062,7 @@ class Blueprint
      * Create a new point column on the table.
      *
      * @param  string  $column
-     * @param  null|int  $srid
+     * @param  int|null  $srid
      * @return \Illuminate\Support\Fluent
      */
     public function point($column, $srid = null)
@@ -1347,17 +1347,5 @@ class Blueprint
         return array_filter($this->columns, function ($column) {
             return (bool) $column->change;
         });
-    }
-
-    /**
-     * Adds the `remember_token` column to the table.
-     *
-     * @return \Illuminate\Support\Fluent
-     */
-    public function created_updated_by()
-    {
-        $this->string('created_by', 255)->nullable();
-
-        $this->string('updated_by', 255)->nullable();
     }
 }

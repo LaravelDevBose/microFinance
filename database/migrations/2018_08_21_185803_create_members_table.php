@@ -25,6 +25,9 @@ class CreateMembersTable extends Migration
             $table->string('email')->nullable();
             $table->text('present_address')->nullable();
             $table->text('premanent_address')->nullable();
+            $table->text('member_image')->nullable();
+            $table->text('mamber_nid')->nullable();
+            $table->text('extra_note')->nullable();
             $table->created_updated_by();
             $table->timestamps();
         });
