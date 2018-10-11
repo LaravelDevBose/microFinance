@@ -58,7 +58,7 @@ trait MemberHelper
         $member->father_name = $request->father_name;
         $member->mother_name = $request->mother_name;
         $member->spouce_name = $request->spouce_name;
-        $member->dob = $request->dob;
+        $member->dob = date('Y-m-d', strtotime(str_replace('/', '-', $request->dob)));
         $member->nid_number = $request->nid_number;
         $member->phone_number = $request->phone_number;
         $member->email = $request->email;
@@ -122,7 +122,7 @@ trait MemberHelper
         $member->father_name = $request->father_name;
         $member->mother_name = $request->mother_name;
         $member->spouce_name = $request->spouce_name;
-        $member->dob = $request->dob;
+        $member->dob = date('Y-m-d', strtotime(str_replace('/', '-', $request->dob))) ;
         $member->nid_number = $request->nid_number;
         $member->phone_number = $request->phone_number;
         $member->email = $request->email;

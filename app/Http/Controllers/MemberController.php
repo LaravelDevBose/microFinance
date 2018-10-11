@@ -133,7 +133,8 @@ class MemberController extends Controller
      */
     public function show($id)
     {
-        return view('admin.member.profile');
+        $member = Member::where('id', $id)->first();
+        return view('admin.member.profile',['member'=>$member]);
     }
 
     /**
@@ -157,7 +158,7 @@ class MemberController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // dd($request->all());
+//         dd($request->all());
         $report = Validator::make($request->all(),[
             'mem_code' => 'required|string|max:6',
             'opening_date' => 'required',
@@ -190,10 +191,8 @@ class MemberController extends Controller
             $member_image = $request->file('member_image');
             $mem_img_url = $request->old_member_image;
             if($member_image && isset($member_image)){
-                // dd('yess');
                 $mem_img_url = $this->singel_image_resize_store_in_folder($member_image ,$folderName);
-                // dd($mem_img_url);
-                if(@getimagesize($request->old_member_image)){
+                if(file_exists($request->old_member_image)){
                     unlink($request->old_member_image);
                 }
             }
@@ -202,23 +201,25 @@ class MemberController extends Controller
             $mem_nid_url = $request->old_nid;
             if($member_nid && isset($member_nid)){
                 $mem_nid_url = $this->singel_image_resize_store_in_folder($member_nid, $folderName);
-                if(@getimagesize($request->old_nid)){
+                if(file_exists($request->old_nid)){
                     unlink($request->old_nid);
                 }
             }
+            $this->update_member_info($id, $request, $mem_img_url,$mem_nid_url);
+            $this->account_info_update($request,$id );
+            $this->emergency_contact_info_Update($request,$id);
+
 
             $n_image = $request->file('n_image');
             $n_img_url = $request->old_n_image;
             if($n_image && isset($n_image)){
                 $n_img_url = $this->singel_image_resize_store_in_folder($n_image, $folderName);
-                if(@getimagesize($request->old_n_image)){
+                if(file_exists($request->old_n_image)){
                     unlink($request->old_n_image);
                 }
             }
 
-            $this->update_member_info($id, $request, $mem_img_url,$mem_nid_url);
-            $this->account_info_update($request,$id );
-            $this->emergency_contact_info_Update($request,$id);
+
             $this->nominee_info_update($id,$request,$n_img_url);
 
             Session::flash('success', 'Member Info Update SuucessFully.');

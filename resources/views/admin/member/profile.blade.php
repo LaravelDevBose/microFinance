@@ -13,10 +13,7 @@
 
     <script type="text/javascript" src="{{ asset('public/backend/assets/js/plugins/tables/datatables/extensions/jszip/jszip.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('public/backend/assets/js/plugins/tables/datatables/extensions/buttons.min.js') }}"></script>
-
-
-
-
+    
     <script type="text/javascript" src="{{ asset('public/backend/assets/js/core/app.js') }}"></script>
     <script type="text/javascript" src="{{ asset('public/backend/assets/js/pages/datatables_extension_buttons_html5.js') }}"></script>
     <script type="text/javascript" src="{{ asset('public/backend/assets/js/pages/user_profile_tabbed.js') }}"></script>
@@ -56,18 +53,26 @@
                             <div class="panel-body bg-blue border-radius-top text-center" style="background-image: url(http://demo.interface.club/limitless/assets/images/bg.png); background-size: contain;">
                                 <div class="content-group-sm">
                                     <h5 class="text-semibold no-margin-bottom">
-                                        Victoria Davidson
+                                        {{ $member->m_name }}
                                     </h5>
 
-                                    <span class="display-block">Head of UX</span>
+                                    <span class="display-block">{{ $member->account_info->area }}</span>
                                 </div>
 
                                 <a href="#" class="display-inline-block content-group-sm">
-                                    <img src="{{ asset('public/backend/assets/images/placeholder.jpg') }}" class="img-circle img-responsive" alt="" style="width: 120px; height: 120px;">
+                                    <?php
+                                    $image = 'public/images/user_profile.jpg';
+                                    if($member->member_image){
+                                        $image = $member->member_image;
+                                        if(!@getimagesize($image)){
+                                            $image = 'public/images/user_profile.jpg';
+                                        }
+                                    } ?>
+                                    <img src="{{ asset($image) }}" class="img-circle img-responsive" alt="{{ $member->m_name }}" style="width: 120px; height: 120px;">
                                 </a>
 
                                 <ul class="list-inline no-margin-bottom">
-                                    <li><a href="#" class="btn bg-blue-700 btn-rounded btn-icon"><i class="icon-phone"> 01731909035</i></a></li>
+                                    <li><a href="#" class="btn bg-blue-700 btn-rounded btn-icon"><i class="icon-phone"> {{ $member->phone_number }}</i></a></li>
                                     {{--<li><a href="#" class="btn bg-blue-700 btn-rounded btn-icon"><i class="icon-bubbles4"></i></a></li>--}}
                                     {{--<li><a href="#" class="btn bg-blue-700 btn-rounded btn-icon"><i class="icon-envelop4"></i></a></li>--}}
                                 </ul>
@@ -84,11 +89,19 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6" style="padding:0 2px;">
                                         <div class="form-group no-margin-bottom">
                                             <label class="text-semibold">Nominee Photo:</label>
                                             <span style="text-align: center;">
-                                                <img src="{{ asset('public/backend/assets/images/placeholder.jpg') }}" class="img-responsive" alt="" style="width: 100%; height: 100px;">
+                                                <?php
+                                                $image_n = 'public/images/user_profile.jpg';
+                                                if($member->nominee->n_image){
+                                                    $image_n = $member->nominee->n_image;
+                                                    if(!@getimagesize($image)){
+                                                        $image_n = 'public/images/user_profile.jpg';
+                                                    }
+                                                } ?>
+                                                <img src="{{ asset($image_n) }}" class="img-responsive" alt="" style="width: 100%; height: 100px;">
                                             </span>
                                         </div>
                                     </div>
@@ -136,27 +149,42 @@
                                         <tbody>
                                         <tr >
                                             <th class="profile-headding" ><span class="text-bold">Member Id </span></th>
-                                            <td>@Kopyov</td>
+                                            <td>{{ $member->account_info->mem_code }}</td>
                                         </tr>
                                         <tr>
                                             <th class="profile-headding"><span class="text-bold">Account Opening Date </span></th>
-                                            <td>@Kopyov</td>
+                                            
+                                            <td><?php $open_date = new DateTime($member->account_info->opening_date); echo date_format($open_date, 'd M Y'); ?></td>
                                         </tr>
-                                        <tr>
+                                        <tr style="display:none;">
                                             <th class="profile-headding"><span class="text-bold">Aee Amount </span></th>
                                             <td>@Kopyov</td>
                                         </tr>
                                         <tr>
                                             <th class="profile-headding"><span class="text-bold">Installment Type </span></th>
-                                            <td>@Kopyov</td>
+                                            <td>
+                                                @if($member->account_info->instalment_type == 1)
+                                                    <label class="label bg-purple-400">Daily</label>
+                                                @elseif($member->account_info->instalment_type == 2)
+                                                    <label class="label bg-violet-400">Weekly</label>
+                                                @else
+                                                    <label class="label bg-teal-400">Monthly</label>
+                                                @endif
+                                            </td>
                                         </tr>
                                         <tr>
                                             <th class="profile-headding"><span class="text-bold">Installment Amount </span></th>
-                                            <td>@Kopyov</td>
+                                            <td>{{ $member->account_info->inst_amount }}</td>
                                         </tr>
                                         <tr>
                                             <th class="profile-headding"><span class="text-bold">Account Status </span></th>
-                                            <td>@Kopyov</td>
+                                            <td>
+                                                @if($member->status == 'a')
+                                                    <label class="label bg-success">Active</label>
+                                                @else
+                                                    <label class="label bg-danger">Deleted</label>
+                                                @endif
+                                            </td>
                                         </tr>
 
                                         </tbody>
@@ -178,31 +206,36 @@
                                         <tbody>
                                         <tr >
                                             <th class="profile-headding" ><span class="text-bold">Full Name </span></th>
-                                            <td>@Kopyov</td>
+                                            <td>{{ $member->m_name }}</td>
                                         </tr>
                                         <tr>
                                             <th class="profile-headding"><span class="text-bold">Father's Name </span></th>
-                                            <td>@Kopyov</td>
+                                            <td>{{ $member->father_name }}</td>
                                         </tr>
                                         <tr>
                                             <th class="profile-headding"><span class="text-bold">Mother's Name </span></th>
-                                            <td>@Kopyov</td>
+                                            <td>{{ $member->mother_name }}</td>
                                         </tr>
                                         <tr>
                                             <th class="profile-headding"><span class="text-bold">Spouse Name </span></th>
-                                            <td>@Kopyov</td>
+                                            <td>{{ $member->spouce_name }}</td>
                                         </tr>
                                         <tr>
                                             <th class="profile-headding"><span class="text-bold">Date Of Birth </span></th>
-                                            <td>@Kopyov</td>
+                                            <td><?php $open_date = new DateTime($member->dob); echo date_format($open_date, 'd M Y'); ?></td>
                                         </tr>
                                         <tr>
+                                            <th class="profile-headding"><span class="text-bold">Email Address </span></th>
+                                            <td>{{ $member->email }}</td>
+                                        </tr>
+                                        
+                                        <tr>
                                             <th class="profile-headding"><span class="text-bold">Present Address </span></th>
-                                            <td>@Kopyov</td>
+                                            <td>{{ $member->present_address }}</td>
                                         </tr>
                                         <tr>
                                             <th class="profile-headding"><span class="text-bold">Permanent Address </span></th>
-                                            <td>@Kopyov</td>
+                                            <td>{{ $member->premanent_address }}</td>
                                         </tr>
 
                                         </tbody>
@@ -224,20 +257,25 @@
                                                 <tbody>
                                                 <tr >
                                                     <th class="profile-headding" ><span class="text-bold">Name </span></th>
-                                                    <td>@Kopyov</td>
+                                                    <td>{{ $member->emergency->e_name }}</td>
                                                 </tr>
-                                                <tr>
-                                                    <th class="profile-headding"><span class="text-bold"> Address </span></th>
-                                                    <td>@Kopyov</td>
+                                                <tr >
+                                                    <th class="profile-headding" ><span class="text-bold">Relation </span></th>
+                                                    <td>{{ $member->emergency->e_relation }}</td>
                                                 </tr>
                                                 <tr>
                                                     <th class="profile-headding"><span class="text-bold">Phone No </span></th>
-                                                    <td>@Kopyov</td>
+                                                    <td>{{ $member->emergency->e_phone_number }}</td>
                                                 </tr>
                                                 <tr>
                                                     <th class="profile-headding"><span class="text-bold">Email </span></th>
-                                                    <td>@Kopyov</td>
+                                                    <td>{{ $member->emergency->e_email }}</td>
                                                 </tr>
+                                                <tr>
+                                                    <th class="profile-headding"><span class="text-bold"> Address </span></th>
+                                                    <td>{{ $member->emergency->e_address }}</td>
+                                                </tr>
+                                                
 
                                                 </tbody>
                                             </table>
@@ -257,21 +295,26 @@
                                                 <tbody>
                                                 <tr >
                                                     <th class="profile-headding" ><span class="text-bold"> Name </span></th>
-                                                    <td>@Kopyov</td>
+                                                    <td>{{ $member->nominee->n_name }}</td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="profile-headding"><span class="text-bold">Father's Name </span></th>
-                                                    <td>@Kopyov</td>
+                                                    <th class="profile-headding"><span class="text-bold">Relation </span></th>
+                                                    <td>{{ $member->nominee->n_relation }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="profile-headding"><span class="text-bold">Phone No </span></th>
+                                                    <td>{{ $member->nominee->n_phone_number }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="profile-headding"><span class="text-bold">Email </span></th>
+                                                    <td>{{ $member->nominee->n_email }}</td>
                                                 </tr>
                                                 <tr>
                                                     <th class="profile-headding"><span class="text-bold">Address </span></th>
-                                                    <td>@Kopyov</td>
+                                                    <td>{{ $member->nominee->n_address }}</td>
                                                 </tr>
 
-                                                <tr>
-                                                    <th class="profile-headding"><span class="text-bold">Relation </span></th>
-                                                    <td>@Kopyov</td>
-                                                </tr>
+                                                
 
                                                 </tbody>
                                             </table>

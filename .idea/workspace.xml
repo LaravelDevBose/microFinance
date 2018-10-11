@@ -2,542 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f85a905d-a1bc-4620-81e4-431c5beaa995" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/Traits/Created_Updated_by.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/Traits/ImageHandler.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/Traits/MemberHelper.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/backend/assets/js/sweetAlert/sweetalert.min.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/microFinance.iml" afterPath="$PROJECT_DIR$/.idea/microFinance.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MemberController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MemberController.php" />
       <change beforePath="$PROJECT_DIR$/app/Member.php" afterPath="$PROJECT_DIR$/app/Member.php" />
       <change beforePath="$PROJECT_DIR$/app/MemberAccountInfo.php" afterPath="$PROJECT_DIR$/app/MemberAccountInfo.php" />
-      <change beforePath="$PROJECT_DIR$/app/NomineeInfo.php" afterPath="$PROJECT_DIR$/app/NomineeInfo.php" />
-      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change beforePath="$PROJECT_DIR$/app/Traits/MemberHelper.php" afterPath="$PROJECT_DIR$/app/Traits/MemberHelper.php" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2018_08_21_185803_create_members_table.php" afterPath="$PROJECT_DIR$/database/migrations/2018_08_21_185803_create_members_table.php" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_09_19_170128_create_member_account_infos_table.php" afterPath="$PROJECT_DIR$/database/migrations/2018_09_19_170128_create_member_account_infos_table.php" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_09_19_170703_create_nominee_infos_table.php" afterPath="$PROJECT_DIR$/database/migrations/2018_09_19_170703_create_nominee_infos_table.php" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/message.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/includes/message.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/member/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/member/create.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/filp/whoops/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/filp/whoops/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/filp/whoops/composer.json" afterPath="$PROJECT_DIR$/vendor/filp/whoops/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php" afterPath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Repository.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Repository.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Command.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Command.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Concerns/ManagesTransactions.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Concerns/ManagesTransactions.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/DetectsLostConnections.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/DetectsLostConnections.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphTo.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphTo.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/SoftDeletes.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/SoftDeletes.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ModelMakeCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ModelMakeCommand.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/bootstrap-stubs/_variables.scss" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/bootstrap-stubs/_variables.scss" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/bootstrap-stubs/app.scss" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/bootstrap-stubs/app.scss" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/layout.blade.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/layout.blade.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Resources/Json/JsonResource.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Resources/Json/JsonResource.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/resources/views/html/message.blade.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/resources/views/html/message.blade.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/resources/views/markdown/message.blade.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/resources/views/markdown/message.blade.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Notifications/Channels/SlackWebhookChannel.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Notifications/Channels/SlackWebhookChannel.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Listener.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Listener.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/EventFake.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/EventFake.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Concerns/ValidatesAttributes.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Concerns/ValidatesAttributes.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Rules/DatabaseRule.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Rules/DatabaseRule.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/Concerns/CompilesTranslations.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/Concerns/CompilesTranslations.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/flysystem/composer.json" afterPath="$PROJECT_DIR$/vendor/league/flysystem/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Local.php" afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Adapter/Local.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/flysystem/src/MountManager.php" afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/MountManager.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/league/flysystem/src/Util/MimeType.php" afterPath="$PROJECT_DIR$/vendor/league/flysystem/src/Util/MimeType.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/README.md" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/README.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/AST_builders.markdown" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/doc/component/AST_builders.markdown" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/Param.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/Param.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/BuilderFactory.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/BuilderFactory.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/BuilderHelpers.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/BuilderHelpers.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeTraverser.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/NodeTraverser.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/ParamTest.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/ParamTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/UseTest.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/Builder/UseTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/BuilderFactoryTest.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/BuilderFactoryTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/CodeParsingTest.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/CodeParsingTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/updateTests.php" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/updateTests.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/.gitignore" afterPath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/.php_cs.dist" afterPath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/.php_cs.dist" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/ChangeLog.md" afterPath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/ChangeLog.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/README.md" afterPath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/README.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/composer.json" afterPath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/composer.json" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/src/Factory.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/src/Factory.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/.gitignore" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-6.5.md" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-6.5.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-7.3.md" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-7.3.md" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/build.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/build.xml" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/phive.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/phive.xml" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpstan-tests.neon" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpstan-tests.neon" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit.xml" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit.xsd" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit.xsd" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Assert.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Assert.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/ArraySubset.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/ArraySubset.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/StringMatchesFormatDescription.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/StringMatchesFormatDescription.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/ExceptionWrapper.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/ExceptionWrapper.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/MockObject/MockBuilder.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/MockObject/MockBuilder.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Filter/NameFilterIterator.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Filter/NameFilterIterator.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Version.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Version.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/Command.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/Command.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/TestRunner.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/TestRunner.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Json.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Json.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Log/TeamCity.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Log/TeamCity.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Test.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Test.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TestDox/NamePrettifier.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TestDox/NamePrettifier.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/AssertTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/ArrayHasKeyTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/ArraySubsetTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/AttributeTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/CallbackTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/ClassHasAttributeTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/ClassHasStaticAttributeTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/ConstraintTestCase.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/CountTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/DirectoryExistsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/ExceptionMessageRegExpTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/ExceptionMessageTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/FileExistsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/GreaterThanTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/IsEmptyTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/IsEqualTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/IsIdenticalTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/IsInstanceOfTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/IsJsonTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/IsNullTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/IsReadableTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/IsTypeTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/IsWritableTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/JsonMatchesErrorMessageProviderTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/JsonMatchesTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/LessThanTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/LogicalAndTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/LogicalOrTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/LogicalXorTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/ObjectHasAttributeTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/RegularExpressionTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/SameSizeTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/StringContainsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/StringEndsWithTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/StringMatchesFormatDescriptionTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/StringStartsWithTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/Constraint/TraversableContainsTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/ConstraintTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/ExceptionWrapperTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Builder/InvocationMockerTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/232.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/3154_namespaced_constant_resolving.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/397.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/abstract_class.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class_call_parent_clone.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class_call_parent_constructor.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class_dont_call_parent_clone.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class_dont_call_parent_constructor.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class_implementing_interface_call_parent_constructor.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class_implementing_interface_dont_call_parent_constructor.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class_partial.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class_with_deprecated_method.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class_with_method_named_method.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class_with_method_with_nullable_typehinted_variadic_arguments.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class_with_method_with_typehinted_variadic_arguments.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/class_with_method_with_variadic_arguments.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/constant_as_parameter_default_value.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/interface.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/invocation_object_clone_object.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/namespaced_class.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/namespaced_class_call_parent_clone.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/namespaced_class_call_parent_constructor.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/namespaced_class_dont_call_parent_clone.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/namespaced_class_dont_call_parent_constructor.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/namespaced_class_implementing_interface_call_parent_constructor.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/namespaced_class_implementing_interface_dont_call_parent_constructor.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/namespaced_class_partial.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/namespaced_interface.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/nonexistent_class.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/nonexistent_class_with_namespace.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/nonexistent_class_with_namespace_starting_with_separator.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/nullable_types.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/proxy.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/return_type_declarations_closure.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/return_type_declarations_final.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/return_type_declarations_generator.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/return_type_declarations_nullable.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/return_type_declarations_object_method.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/return_type_declarations_parent.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/return_type_declarations_self.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/return_type_declarations_static_method.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/return_type_declarations_void.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/scalar_type_declarations.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/wsdl_class.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/wsdl_class_namespace.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Generator/wsdl_class_partial.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/GeneratorTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Invocation/ObjectInvocationTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Invocation/StaticInvocationTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/Matcher/ConsecutiveParametersTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/MockBuilderTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/MockObjectTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/MockObject/ProxyObjectTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/TestCaseTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/TestFailureTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/TestImplementorTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/TestListenerTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/TestResultTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Framework/TestSuiteTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1149.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1149/Issue1149Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1216.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1216/Issue1216Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1216/bootstrap1216.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1216/phpunit1216.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1265.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1265/Issue1265Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1265/phpunit1265.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1330.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1330/Issue1330Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1330/phpunit1330.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1335.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1335/Issue1335Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1335/bootstrap1335.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1337.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1337/Issue1337Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1348.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1348/Issue1348Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1351.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1351/ChildProcessClass1351.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1351/Issue1351Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1374.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1374/Issue1374Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1437.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1437/Issue1437Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1468.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1468/Issue1468Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1471.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1471/Issue1471Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1472.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1472/Issue1472Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1570.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/1570/Issue1570Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2137-filter.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2137-no_filter.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2137/Issue2137Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2145.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2145/Issue2145Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2158.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2158/Issue2158Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2158/constant.inc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2366.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2366/Issue2366Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2380.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2380/Issue2380Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2382.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2382/Issue2382Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2435.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2435/Issue2435Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/244.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/244/Issue244Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2448-existing-test.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2448-not-existing-test.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2448/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2448/Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591-separate-class-preserve-no-bootstrap.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591-separate-class-preserve.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591-separate-function-no-preserve-no-bootstrap-php73.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591-separate-function-no-preserve-no-bootstrap-xdebug.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591-separate-function-no-preserve-no-bootstrap.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591-separate-function-no-preserve.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591-separate-function-preserve.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591/SeparateClassPreserveTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591/SeparateFunctionNoPreserveTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591/SeparateFunctionPreserveTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591/bootstrapNoBootstrap.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591/bootstrapWithBootstrap.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2591/bootstrapWithBootstrapNoGlobal.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2724-diff-pid-from-master-process.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2724/SeparateClassRunMethodInNewProcessTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2725-separate-class-before-after-pid.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2725/BeforeAfterClassPidTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2731.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2731/Issue2731Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2811.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2811/Issue2811Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2830.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2830/Issue2830Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2972.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2972/issue-2972-test.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/2972/unconventiallyNamedIssue2972Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/3093/Issue3093Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/3093/issue-3093-test.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/3107/Issue3107Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/3107/issue-3107-test.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/3156/Issue3156Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/322.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/322/Issue322Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/322/phpunit322.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/433.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/433/Issue433Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/445.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/445/Issue445Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/498.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/498/Issue498Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/503.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/503/Issue503Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/581.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/581/Issue581Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/74.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/74/Issue74Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/74/NewException.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/765.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/765/Issue765Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/797.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/797/Issue797Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/797/bootstrap797.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/863.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/873.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/GitHub/873/Issue873Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/1021.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/1021/Issue1021Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/523.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/523/Issue523Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/578.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/578/Issue578Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/684.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/684/Issue684Test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783/ChildSuite.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783/OneTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783/ParentSuite.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Regression/Trac/783/TwoTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Runner/PhptTestCaseTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Runner/ResultCacheExtensionTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Runner/TestSuiteSorterTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/_files/Extension.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/_files/HookTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/_files/NullPrinter.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/_files/expect_external.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/_files/hooks.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/_files/phpt-env.expected.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/_files/phpt_external.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/abstract-test-class.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/assertion.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/cache-result.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/code-coverage-ignore.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/code-coverage-phpt.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/colors-always.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/concrete-test-class.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/custom-printer-debug.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/custom-printer-verbose.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-debug.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-issue-2833.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-issue-2859.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-issue-2922.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-log-xml-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-log-xml.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dataprovider-testdox.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/debug.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/default-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/default.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/defaulttestsuite-using-testsuite.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/defaulttestsuite.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/defects-first-order-via-cli.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dependencies-clone.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dependencies-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dependencies.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dependencies2-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dependencies2.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dependencies3-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/dependencies3.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/disable-code-coverage-ignore.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/empty-testcase.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/exception-stack.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/exclude-group-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/exclude-group.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/execution-order-options-via-config.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/failure-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/failure-reverse-list.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/failure.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/fatal-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-class-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-class.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-classname-and-range-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-classname-and-range.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-number-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-number.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-only-range-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-only-range.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-only-regexp-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-only-regexp.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-only-string-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-only-string.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-range-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-range.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-regexp-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-regexp.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-string-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-string.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-method-case-insensitive.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-method-case-sensitive-no-result.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-method-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-method.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/filter-no-results.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/forward-compatibility.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/group-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/group.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/help.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/help2.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/hooks.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/ini-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/list-groups.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/list-suites.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/list-tests-dataprovider.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/list-tests-xml-dataprovider.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/log-junit.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/log-teamcity.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/mycommand.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/options-after-arguments.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/order-by-default-invalid-via-cli.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/output-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/phar-extension-suppressed.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/phar-extension.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/phpt-args.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/phpt-env.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/phpt-external.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/phpt-stderr.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/phpt-stdin.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/phpt-xfail.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/repeat.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/report-tests-performing-assertions-when-annotated-with-does-not-perform-assertions.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/report-useless-tests-incomplete.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/report-useless-tests-isolation.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/report-useless-tests.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/stop-on-defect-via-cli.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/stop-on-defect-via-config.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/stop-on-error-via-cli.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/stop-on-error-via-config.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/stop-on-incomplete-via-cli.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/stop-on-incomplete-via-config.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/stop-on-warning-via-cli.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/stop-on-warning-via-config.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/teamcity-inner-exceptions.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/teamcity.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/test-order-randomized-seed-with-dependency-resolution.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/test-order-randomized-with-dependency-resolution.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/test-order-reversed-with-dependency-resolution.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/test-order-reversed-without-dependency-resolution.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/test-suffix-multiple.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/test-suffix-single.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/testdox-dataprovider-placeholder.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/testdox-exclude-group.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/testdox-group.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/testdox-html.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/testdox-text.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/testdox-verbose.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/testdox-xml.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/TextUI/testdox.phpt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/ConfigurationGeneratorTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/ConfigurationTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/GetoptTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/GlobalStateTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/JsonTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/NullTestResultCacheTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/PHP/AbstractPhpProcessTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/RegularExpressionTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/TestDox/CliTestDoxPrinterTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/TestDox/NamePrettifierTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/TestResultCacheTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/TestTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/Util/XmlTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/DataProviderTestDoxTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/DataProviderTestDoxTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/configuration.one-file-suite.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/configuration.one-file-suite.xml" />
-      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/CodeCleaner/ListPass.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/CodeCleaner/ListPass.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/CodeCleaner/RequirePass.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/CodeCleaner/RequirePass.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/CodeCleaner/ValidClassNamePass.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/CodeCleaner/ValidClassNamePass.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/Shell.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/Shell.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/CodeCleaner/ListPassTest.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/CodeCleaner/ListPassTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/CodeCleaner/ValidClassNamePassTest.php" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/CodeCleaner/ValidClassNamePassTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/CHANGES" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/CHANGES" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder/IdnAddressEncoder.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder/IdnAddressEncoder.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Attachment.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Attachment.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/IdGenerator.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/IdGenerator.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/MessageLogger.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/MessageLogger.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/SmtpTransport.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/SmtpTransport.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/CramMd5AuthenticatorTest.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/CramMd5AuthenticatorTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/LoginAuthenticatorTest.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/LoginAuthenticatorTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/NTLMAuthenticatorTest.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/NTLMAuthenticatorTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/PlainAuthenticatorTest.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/PlainAuthenticatorTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/phpt/decorate_exception_hander.phpt" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/phpt/decorate_exception_hander.phpt" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/BinaryFileResponse.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/BinaryFileResponse.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Response.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Response.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/AbstractRedisSessionHandlerTestCase.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/AbstractRedisSessionHandlerTestCase.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PredisClusterSessionHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PredisClusterSessionHandlerTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpCache/SubRequestHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpCache/SubRequestHandler.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/Fragment/InlineFragmentRendererTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/Fragment/InlineFragmentRendererTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Matcher/Dumper/PhpMatcherDumper.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Matcher/Dumper/PhpMatcherDumper.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher0.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher0.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher1.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher1.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher10.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher10.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher11.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher11.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher12.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher12.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher13.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher13.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher2.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher2.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher3.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher3.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher4.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher4.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher5.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher5.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher6.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher6.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher7.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher7.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher8.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher8.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher9.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher9.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Matcher/RedirectableUrlMatcherTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Matcher/RedirectableUrlMatcherTest.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Command/XliffLintCommand.php" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Command/XliffLintCommand.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Resources/schemas/xliff-core-1.2-strict.xsd" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Resources/schemas/xliff-core-1.2-strict.xsd" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/css/htmlDescriptor.css" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/css/htmlDescriptor.css" />
+      <change beforePath="$PROJECT_DIR$/public/images/member/20181011115122jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/member/20181011115122png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/member/20181011115254jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/member/20181011115254png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/member/20181011115334jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/member/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/member/edit.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/member/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/member/index.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/member/profile.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/member/profile.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -566,22 +44,59 @@
       <file leaf-file-name="web.php" pinned="true" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="0">
               <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MemberController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MemberController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemberController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="64" column="56" lean-forward="false" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
+            <state relative-caret-position="246">
+              <caret line="136" column="61" lean-forward="false" selection-start-line="136" selection-start-column="54" selection-end-line="136" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/member/profile.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="304" column="113" lean-forward="false" selection-start-line="304" selection-start-column="113" selection-end-line="304" selection-end-column="113" />
               <folding>
-                <element signature="e#140#168#0#PHP" expanded="true" />
-                <marker date="1538586243230" expanded="true" signature="1915:2897" ph="..." />
+                <element signature="e#2197#2312#0#HTML" expanded="true" />
+                <element signature="e#2834#2839#0#PHP" expanded="true" />
+                <element signature="e#4506#4533#0#HTML" expanded="true" />
+                <element signature="e#4921#4943#0#HTML" expanded="true" />
+                <element signature="e#5173#5200#0#HTML" expanded="true" />
+                <element signature="e#5250#5255#0#PHP" expanded="true" />
+                <element signature="e#8620#8625#0#PHP" expanded="true" />
+                <element signature="e#8827#8848#0#HTML" expanded="true" />
+                <element signature="e#13071#13076#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018_08_21_185803_create_members_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_21_185803_create_members_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NomineeInfo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/NomineeInfo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="97" lean-forward="false" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="97" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -589,49 +104,26 @@
       <file leaf-file-name="MemberHelper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Traits/MemberHelper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="43" />
+            <state relative-caret-position="80">
+              <caret line="60" column="82" lean-forward="false" selection-start-line="60" selection-start-column="82" selection-end-line="60" selection-end-column="82" />
               <folding>
-                <element signature="e#144#170#0#PHP" expanded="true" />
-                <element signature="e#283#1420#0#PHP" expanded="true" />
-                <element signature="e#1613#2547#0#PHP" expanded="true" />
-                <element signature="e#2553#3043#0#PHP" expanded="true" />
-                <element signature="e#3049#3453#0#PHP" expanded="true" />
-                <element signature="e#3458#3933#0#PHP" expanded="true" />
+                <marker date="1539288437097" expanded="true" signature="6390:6719" ph="..." />
+                <marker date="1539288437097" expanded="true" signature="6390:6722" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageHandler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Traits/ImageHandler.php">
+      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/member/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="286">
+              <caret line="268" column="28" lean-forward="false" selection-start-line="268" selection-start-column="28" selection-end-line="275" selection-end-column="40" />
               <folding>
-                <element signature="e#146#1983#0#PHP" expanded="true" />
-                <element signature="e#296#706#0#PHP" expanded="true" />
+                <element signature="e#14692#14697#0#PHP" expanded="true" />
+                <element signature="e#16063#16068#0#PHP" expanded="true" />
+                <element signature="e#17461#17466#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/member/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="83" column="59" lean-forward="false" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/message.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="28" column="70" lean-forward="true" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -678,9 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DepartmentController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/department/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/designation/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DesignationController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SubAdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/subAdmin/create.blade.php" />
@@ -716,19 +205,22 @@
         <option value="$PROJECT_DIR$/app/IE_Head.php" />
         <option value="$PROJECT_DIR$/app/NomineeInfo.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_09_19_170703_create_nominee_infos_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_08_21_185803_create_members_table.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Traits/Created_Updated_by.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/Traits/ImageHandler.php" />
-        <option value="$PROJECT_DIR$/app/Member.php" />
-        <option value="$PROJECT_DIR$/app/MemberAccountInfo.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_09_19_170128_create_member_account_infos_table.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/member/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/includes/message.blade.php" />
-        <option value="$PROJECT_DIR$/app/Traits/MemberHelper.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/member/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MemberController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/member/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Member.php" />
+        <option value="$PROJECT_DIR$/app/MemberAccountInfo.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_08_21_185803_create_members_table.php" />
+        <option value="$PROJECT_DIR$/app/Traits/MemberHelper.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/member/profile.blade.php" />
       </list>
     </option>
   </component>
@@ -843,7 +335,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -876,26 +368,34 @@
             <path>
               <item name="microFinance" type="b2602c69:ProjectViewProjectNode" />
               <item name="microFinance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="microFinance" type="b2602c69:ProjectViewProjectNode" />
               <item name="microFinance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="microFinance" type="b2602c69:ProjectViewProjectNode" />
               <item name="microFinance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="microFinance" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microFinance" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="member" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -969,28 +469,30 @@
       <workItem from="1537513710959" duration="2340000" />
       <workItem from="1537717874942" duration="2746000" />
       <workItem from="1538572325086" duration="12351000" />
+      <workItem from="1539183830710" duration="1198000" />
+      <workItem from="1539279976803" duration="8031000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150513000" />
+    <option name="totallyTimeSpent" value="159742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.204236" sideWeight="0.49342105" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21028744" sideWeight="0.49342105" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15279879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="582" y="263" width="202" height="201" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18910742" sideWeight="0.5065789" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28782895" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1036,41 +538,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="48" column="52" lean-forward="true" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -1190,13 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/EmployeeInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="121" lean-forward="false" selection-start-line="9" selection-start-column="121" selection-end-line="9" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/employee/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3291">
@@ -1264,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="23" column="85" lean-forward="false" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1272,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1280,15 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-180">
           <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_21_185803_create_members_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1296,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1906">
           <caret line="938" column="20" lean-forward="false" selection-start-line="938" selection-start-column="20" selection-end-line="938" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1304,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-963">
           <caret line="732" column="23" lean-forward="false" selection-start-line="732" selection-start-column="23" selection-end-line="732" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1312,15 +759,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="e#10#111#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="0">
           <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="31" />
           <folding />
         </state>
@@ -1330,30 +774,79 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/member/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="83" column="59" lean-forward="false" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Member.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/message.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="20">
+          <caret line="28" column="70" lean-forward="false" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_09_19_170128_create_member_account_infos_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Traits/ImageHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state relative-caret-position="280">
+          <caret line="55" column="49" lean-forward="true" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+          <folding>
+            <element signature="e#296#706#0#PHP" expanded="true" />
+            <element signature="e#754#991#0#PHP" expanded="true" />
+            <element signature="e#1036#1440#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/member/20181011070354.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/member/20181011064805.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/member/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="109" column="84" lean-forward="false" selection-start-line="109" selection-start-column="84" selection-end-line="109" selection-end-column="84" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/member/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="268" column="28" lean-forward="false" selection-start-line="268" selection-start-column="28" selection-end-line="275" selection-end-column="40" />
+          <folding>
+            <element signature="e#14692#14697#0#PHP" expanded="true" />
+            <element signature="e#16063#16068#0#PHP" expanded="true" />
+            <element signature="e#17461#17466#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/MemberAccountInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="101" lean-forward="false" selection-start-line="8" selection-start-column="97" selection-end-line="8" selection-end-column="101" />
+        <state relative-caret-position="220">
+          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/EmployeeInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="121" lean-forward="false" selection-start-line="9" selection-start-column="121" selection-end-line="9" selection-end-column="121" />
           <folding />
         </state>
       </provider>
@@ -1366,63 +859,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/NomineeInfo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="8" column="107" lean-forward="false" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="107" />
+          <caret line="8" column="97" lean-forward="false" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="97" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Traits/ImageHandler.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemberController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#146#1983#0#PHP" expanded="true" />
-            <element signature="e#296#706#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/message.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="28" column="70" lean-forward="true" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+        <state relative-caret-position="246">
+          <caret line="136" column="61" lean-forward="false" selection-start-line="136" selection-start-column="54" selection-end-line="136" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/member/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_09_19_170128_create_member_account_infos_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="83" column="59" lean-forward="false" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="59" />
+        <state relative-caret-position="329">
+          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_21_185803_create_members_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Traits/MemberHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="80">
+          <caret line="60" column="82" lean-forward="false" selection-start-line="60" selection-start-column="82" selection-end-line="60" selection-end-column="82" />
           <folding>
-            <element signature="e#144#170#0#PHP" expanded="true" />
-            <element signature="e#283#1420#0#PHP" expanded="true" />
-            <element signature="e#1613#2547#0#PHP" expanded="true" />
-            <element signature="e#2553#3043#0#PHP" expanded="true" />
-            <element signature="e#3049#3453#0#PHP" expanded="true" />
-            <element signature="e#3458#3933#0#PHP" expanded="true" />
+            <marker date="1539288437097" expanded="true" signature="6390:6719" ph="..." />
+            <marker date="1539288437097" expanded="true" signature="6390:6722" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemberController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/member/profile.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="64" column="56" lean-forward="false" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
+        <state relative-caret-position="257">
+          <caret line="304" column="113" lean-forward="false" selection-start-line="304" selection-start-column="113" selection-end-line="304" selection-end-column="113" />
           <folding>
-            <element signature="e#140#168#0#PHP" expanded="true" />
-            <marker date="1538586243230" expanded="true" signature="1915:2897" ph="..." />
+            <element signature="e#2197#2312#0#HTML" expanded="true" />
+            <element signature="e#2834#2839#0#PHP" expanded="true" />
+            <element signature="e#4506#4533#0#HTML" expanded="true" />
+            <element signature="e#4921#4943#0#HTML" expanded="true" />
+            <element signature="e#5173#5200#0#HTML" expanded="true" />
+            <element signature="e#5250#5255#0#PHP" expanded="true" />
+            <element signature="e#8620#8625#0#PHP" expanded="true" />
+            <element signature="e#8827#8848#0#HTML" expanded="true" />
+            <element signature="e#13071#13076#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

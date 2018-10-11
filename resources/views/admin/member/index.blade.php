@@ -107,7 +107,7 @@
                     <td>{{ $member->account_info->inst_amount }}</td>
                     <td class="text-center">
                         <ul class="icons-list">
-                            <li class="text-teal-600"><a href="#" title="View"><i class="icon-eye"></i></a></li>
+                            <li class="text-teal-600"><a href="{{ route('member.show', $member->id) }}" title="View"><i class="icon-eye"></i></a></li>
                             <li class="text-primary-600"><a href="{{ route('member.edit',$member->id) }}" title="Edit"><i class="icon-pencil7"></i></a></li>
                             <li class="text-danger-600"><a href="#" title="Delete"><i class="icon-trash"></i></a></li>
                         </ul>

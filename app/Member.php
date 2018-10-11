@@ -11,6 +11,9 @@ class Member extends Model
         'member_image','mamber_nid','extra_note',
     ];
 
+    public function getMNameAttribute($value){
+        return ucfirst($value);
+    }
     public function account_info()
     {
     	return $this->hasOne('App\MemberAccountInfo', 'member_id', 'id');

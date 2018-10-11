@@ -219,8 +219,8 @@
                     <div class="col-md-6">
                         <div class="form-group col-md-8">
                             <label class="display-block">Member Image: <span class="text-danger">*</span></label>
-                            <input type="file" class="file-input " name="member_image"    data-browse-class="btn btn-primary btn-block" data-show-remove="false" data-show-caption="false" data-show-upload="false">
-                            <input type="hidden" name="oldmember_image" value="{{ $member->member_image }}">
+                            <input type="file" class="file-input" name="member_image" data-browse-class="btn btn-primary btn-block" data-show-remove="false" data-show-caption="false" data-show-upload="false">
+                            <input type="hidden" name="old_member_image" value="{{ $member->member_image }}">
                             <span class="help-block">Select member image in max 2 mb.</span>
                         </div>
                         <div class="col-md-4">
@@ -267,14 +267,14 @@
                         </div>
                         <div class="col-md-4">
                             <?php 
-                                $image = 'public/images/user_profile.jpg';
-                                if($member->nominee->n_image){ 
-                                    $image = $member->nominee->n_image; 
+                                $image_n = 'public/images/user_profile.jpg';
+                                if($member->nominee->n_image){
+                                    $image_n = $member->nominee->n_image;
                                     if(!@getimagesize($image)){
-                                        $image = 'public/images/user_profile.jpg'; 
+                                        $image_n = 'public/images/user_profile.jpg';
                                         }
                                     } ?>
-                            <img src="{{ asset($image) }}" alt="" style="height: 60px; width: 60px; border: 1px solid #ddd; border-radius: 3px; "> 
+                            <img src="{{ asset($image_n) }}" alt="" style="height: 60px; width: 60px; border: 1px solid #ddd; border-radius: 3px; ">
                         </div>
                     </div>
 
