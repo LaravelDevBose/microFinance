@@ -11,4 +11,18 @@ class Member extends Model
         'member_image','mamber_nid','extra_note',
     ];
 
+    public function account_info()
+    {
+    	return $this->hasOne('App\MemberAccountInfo', 'member_id', 'id');
+    }
+
+    public function nominee()
+    {
+    	return $this->hasOne('App\NomineeInfo', 'member_id', 'id');
+    }
+
+    public function emergency()
+    {
+    	return $this->hasOne('App\EmergencyInfo', 'member_id', 'id');
+    }
 }

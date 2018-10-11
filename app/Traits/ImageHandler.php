@@ -44,7 +44,7 @@ trait ImageHandler{
         //get Current Date time String
         $date = $this->currentTime();
         //concrite a new image Name
-        $newName = $date.$ext;
+        $newName = $date.'.'.$ext;
         //return image name
         return $newName;
     }

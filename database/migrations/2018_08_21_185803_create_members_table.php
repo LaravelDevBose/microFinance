@@ -28,6 +28,7 @@ class CreateMembersTable extends Migration
             $table->text('member_image')->nullable();
             $table->text('mamber_nid')->nullable();
             $table->text('extra_note')->nullable();
+            $table->char('status')->nullable();
             $table->created_updated_by();
             $table->timestamps();
         });

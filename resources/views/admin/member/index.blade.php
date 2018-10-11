@@ -29,7 +29,7 @@
     <!-- Column selectors -->
     <div class="panel border-teal-400">
         <div class="panel-heading bg-teal-300 ">
-            <h5 class="panel-title">Income & Expense Transition List</h5>
+            <h5 class="panel-title">Member Information List</h5>
             <div class="heading-elements">
                 <ul class="icons-list">
                     <li><a data-action="collapse"></a></li>
@@ -38,7 +38,7 @@
                 </ul>
             </div>
         </div>
-        <div class="panel-body">
+        <div class="panel-body" style="display: none;">
             <div class="col-md-8">
                 <div class="row " >
                     <form action="#"  class="form-horizontal">
@@ -85,31 +85,35 @@
         <table class="table table-xs table-bordered  datatable-button-html5-columns ">
             <thead>
             <tr>
-                <th>Transition ID</th>
-                <th>IE Head</th>
-                <th>Date</th>
-                <th>Transition Type</th>
-                <th>Amount</th>
-                <th>Note</th>
+                <th>Member ID</th>
+                <th>Member Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Opening Date</th>
+                <th>Instalment Type</th>
+                <th>Instalment amount</th>
                 <th>Action</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>Marth</td>
-                <td><a href="#">Enright</a></td>
-                <td>Traffic Court Referee</td>
-                <td>22 Jun 1972</td>
-                <td><span class="label label-success">Active</span></td>
-                <td>$85,600</td>
-                <td class="text-center">
-                    <ul class="icons-list">
-                        <li class="text-teal-600"><a href="#" title="View"><i class="icon-eye"></i></a></li>
-                        <li class="text-primary-600"><a href="#" title="Edit"><i class="icon-pencil7"></i></a></li>
-                        <li class="text-danger-600"><a href="#" title="Delete"><i class="icon-trash"></i></a></li>
-                    </ul>
-                </td>
-            </tr>
+                @foreach($members as $member)
+                <tr>
+                    <td>{{ $member->account_info->mem_code }}</td>
+                    <td><a href="#">{{ $member->m_name }}</a></td>
+                    <td>{{ $member->phone_number }}</td>
+                    <td>{{ $member->email }}</td>
+                    <td><?php $date = new DateTime($member->account_info->opening_date)?> {{ date_format($date, 'd M Y') }}</td>
+                    <td>{{ $member->account_info->instalment_type }}</td>
+                    <td>{{ $member->account_info->inst_amount }}</td>
+                    <td class="text-center">
+                        <ul class="icons-list">
+                            <li class="text-teal-600"><a href="#" title="View"><i class="icon-eye"></i></a></li>
+                            <li class="text-primary-600"><a href="{{ route('member.edit',$member->id) }}" title="Edit"><i class="icon-pencil7"></i></a></li>
+                            <li class="text-danger-600"><a href="#" title="Delete"><i class="icon-trash"></i></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                @endforeach
             </tbody>
         </table>
     </div>

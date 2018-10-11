@@ -969,6 +969,14 @@ class Blueprint
         $this->timestampTz('updated_at', $precision)->nullable();
     }
 
+    
+    public function created_updated_by($precision = 0)
+    {
+        $this->string('created_by', $precision)->nullable();
+
+        $this->string('updated_by', $precision)->nullable();
+    }
+
     /**
      * Add a "deleted at" timestamp for the table.
      *
