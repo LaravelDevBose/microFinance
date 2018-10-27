@@ -29,10 +29,13 @@ Route::prefix('admin')->group( function(){
 
         /*------ Member Resource Route List--------*/
         Route::Resource('member','MemberController');
+        Route::get('/find/member/{id}', 'MemberController@find_member_info')->name('find.member');
+
 
         /*----- Cash Transition Route list---------*/
-        Route::get('dps/transition', 'TransitionController@dps_transition_page')->name('dps.transition');
-        Route::get('loan/transition', 'TransitionController@loan_transition_page')->name('loan.transition');
+        Route::get('dps/transition', 'TransactionController@dps_transition_page')->name('dps.transition');
+
+        Route::get('loan/transition', 'TransactionController@loan_transition_page')->name('loan.transition');
 
         /*------ Income & Expense Route List --------*/
         Route::Resource('income_expense', 'IncomeExpenseController');

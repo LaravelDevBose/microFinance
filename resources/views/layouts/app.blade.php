@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title')</title>
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
     <link href="{{ asset('public/backend/assets/css/icons/icomoon/styles.css') }}" rel="stylesheet" type="text/css">
@@ -28,10 +28,19 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
 </head>
 
 <body class=""> {{--sidebar-xs has-detached-left -> use when profile is view --}}
-
+<div id="loader" hidden style="position: fixed; z-index: 1000; margin: auto; height: 100%; width: 100%; background:rgba(255, 255, 255, 0.72);;">
+    <img src="{{ asset('public/images/loader.gif') }}" style="top: 30%; left: 50%; opacity: 1; position: fixed;">
+</div>
 <!-- Main navbar -->
 @include('admin.includes.navbar')
 <!-- /main navbar -->
@@ -71,6 +80,12 @@
 <!-- /page container -->
 @yield('custom_script')
 
-
+<script type="text/javascript">
+  $(document).ajaxStart(function(){ 
+    $('#loader').show();
+  }).ajaxStop(function(){ 
+     $('#loader').hide();
+  });
+</script>
 </body>
 </html>

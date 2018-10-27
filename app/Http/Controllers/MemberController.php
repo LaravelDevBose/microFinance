@@ -23,6 +23,19 @@ class MemberController extends Controller
         return view('admin.member.index',['members'=>$members]);
     }
 
+    public function find_member_info($id=Null)
+    {
+        $member = Member::find($id);
+        if($member){
+            $data['inst_amount'] = $member->account_info->inst_amount;
+            $data['mem_name'] = $member->m_name;
+
+            echo json_encode($data); die();
+        }
+        echo 0;
+        
+
+    }
     /**
      * Show the form for creating a new resource.
      *

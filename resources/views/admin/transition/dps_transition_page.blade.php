@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','DPS Transition')
+@section('title','DPS Transaction')
 
 @section('assetFile')
     <!-- Theme JS files -->
@@ -31,7 +31,7 @@
     <div class="content">
         <div class="panel border-purple-400">
             <div class="panel-heading bg-purple-300 ">
-                <h5 class="panel-title">Make New Deposit Transition</h5>
+                <h5 class="panel-title">Make New Deposit Transaction</h5>
                 <div class="heading-elements">
                     <ul class="icons-list">
                         <li><a data-action="collapse"></a></li>
@@ -41,14 +41,15 @@
                 </div>
             </div>
             <div class="panel-body">
-                <form action="#"  class="form-horizontal">
+                <form class="form-horizontal" id="dps_trans">
                     <div class="row " >
-                        <div class="col-md-6">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
                             <div class="form-group">
-                                <label class="col-lg-3 control-label" >Transition Type: <span class="text-danger text-bold">*</span></label>
-                                <div class="col-md-8 input-group-sm">
+                                <label class="col-lg-4 control-label" for="tran_type" >Transaction Type: <span class="text-danger text-bold">*</span></label>
+                                <div class="col-md-7 input-group-sm">
                                     <div class="input-group-xs">
-                                        <select name="transition_type"  data-placeholder="Select a type" class="select required">
+                                        <select name="tran_type" id="tran_type" required data-placeholder="Select a type" class="select required">
                                             <option></option>
                                             <option value="1">Received</option>
                                             <option value="2">Payment</option>
@@ -57,12 +58,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="form-group  has-feedback">
-                                <label class="col-lg-3 control-label" >Transition Date: <span class="text-danger text-bold">*</span></label>
-                                <div class="col-md-8">
+                                <label class="col-lg-4 control-label" for="tran_date">Transaction Date: <span class="text-danger text-bold">*</span></label>
+                                <div class="col-md-7">
                                     <div class="input-group input-group-xs">
-                                        <input type="text" class="form-control datepicker required " placeholder="Transition Date">
+                                        <input type="text" name="tran_date" id="tran_date" value="{{ date('d/m/Y') }}" required  class="form-control datepicker required " placeholder="Transaction Date">
                                         <span class="input-group-addon datepicker"><i class="icon-calendar2"></i></span>
                                     </div>
                                 </div>
@@ -72,67 +73,72 @@
                     </div>
 
                     <div class="row" >
-                        <div class="col-md-6">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
 
                             <div class="form-group">
-                                <label class="col-lg-3 control-label" >Member Id: <span class="text-danger text-bold ">*</span></label>
-                                <div class="col-md-8">
+                                <label class="col-lg-4 control-label" for="mem_id" >Member: <span class="text-danger text-bold ">*</span></label>
+                                <div class="col-md-7 input-group-sm">
                                     <div class="input-group-xs">
-                                        <input type="text" name="member_id" class="form-control required " placeholder="Member Id">
+                                        <select name="mem_id" id="mem_id" required  data-placeholder="Select a type" class="select required">
+                                            <option></option>
+                                            <option value="1">Received</option>
+                                            <option value="2">Payment</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-lg-3 control-label" >Member Name: </label>
-                                <div class="col-md-8">
+                                <label class="col-lg-4 control-label" for="member_name" >Member Name: </label>
+                                <div class="col-md-7">
                                     <div class="input-group-xs">
-                                        <input type="text" name="member_name" class="form-control  " readonly placeholder="Member Name">
+                                        <input type="text" name="member_name" required id="member_name" class="form-control  " readonly placeholder="Member Name">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-lg-3 control-label" >Current Balance: </label>
-                                <div class="col-md-8">
+                                <label class="col-lg-4 control-label" for="crt_balance">Current Balance: </label>
+                                <div class="col-md-7">
                                     <div class="input-group-xs">
-                                        <input type="text" name="balance" class="form-control  " readonly placeholder="Member Name">
+                                        <input type="text" name="crt_balance" id="crt_balance" class="form-control  " readonly placeholder="Member Name">
                                     </div>
                                 </div>
                             </div>
 
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="form-group">
-                                <label class="col-lg-3 control-label" >Instalment:</label>
-                                <div class="col-md-8">
+                                <label class="col-lg-4 control-label" for="inst_amount" >Instalment:</label>
+                                <div class="col-md-7">
                                     <div class="input-group-xs">
-                                        <input type="text" name="instalment" class="form-control  " placeholder="Instalment amount">
+                                        <input type="text" name="inst_amount" id="inst_amount" readonly class="form-control  " placeholder="Instalment amount">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-lg-3 control-label" >Amount:  <span class="text-danger text-bold">*</span></label>
-                                <div class="col-md-8">
+                                <label class="col-lg-4 control-label" for="amount" >Amount:  <span class="text-danger text-bold">*</span></label>
+                                <div class="col-md-7">
                                     <div class="input-group-xs">
-                                        <input type="text" name="amount" class="form-control required "  placeholder="0.00 Tk">
+                                        <input type="number" name="amount" id="amount" required class="form-control required "  placeholder="0.00 Tk">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-lg-3 control-label" >Short Note: </label>
-                                <div class="col-md-8">
+                                <label class="col-lg-4 control-label" for="short_note" >Short Note: </label>
+                                <div class="col-md-7">
                                     <div class="input-group-xs">
-                                        <input type="text" name="short_note" class="form-control "  placeholder="Short Note ">
+                                        <input type="text" name="short_note" id="short_note" class="form-control "  placeholder="Short Note ">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary pull-right">Submit <i class="icon-check position-right"></i></button>
+                    <button type="submit" class="btn btn-primary pull-right dps_submit">Submit <i class="icon-check position-right"></i></button>
                 </form>
 
             </div>
@@ -141,7 +147,7 @@
         <!-- Column selectors -->
         <div class="panel border-teal-400">
             <div class="panel-heading bg-teal-300 ">
-                <h5 class="panel-title">Deposit Transition List</h5>
+                <h5 class="panel-title">Deposit Transaction List</h5>
                 <div class="heading-elements">
                     <ul class="icons-list">
                         <li><a data-action="collapse"></a></li>
@@ -197,10 +203,10 @@
             <table class="table table-xs table-bordered  datatable-button-html5-columns ">
                 <thead>
                 <tr>
-                    <th>Transition ID</th>
+                    <th>Transaction ID</th>
                     <th>Member Name</th>
                     <th>Date</th>
-                    <th>Transition Type</th>
+                    <th>Transaction Type</th>
                     <th>Amount</th>
                     <th>Note</th>
                     <th>Action</th>
@@ -231,6 +237,7 @@
 @endsection
 
 @section('custom_script')
+@include('admin/ajax/dps_tran_ajax')
 
     <script>$('.datepicker').datepicker({
             format: 'dd/mm/yyyy',

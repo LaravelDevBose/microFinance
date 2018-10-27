@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Loan Transition')
+@section('title','Loan Transaction')
 
 @section('assetFile')
     <!-- Theme JS files -->
@@ -31,7 +31,7 @@
     <div class="content">
         <div class="panel border-purple-400">
             <div class="panel-heading bg-purple-300 ">
-                <h5 class="panel-title">Make New Deposit Transition</h5>
+                <h5 class="panel-title">Make New Deposit Transaction</h5>
                 <div class="heading-elements">
                     <ul class="icons-list">
                         <li><a data-action="collapse"></a></li>
@@ -45,7 +45,7 @@
                     <div class="row " >
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="col-lg-3 control-label" >Transition Type: <span class="text-danger text-bold">*</span></label>
+                                <label class="col-lg-3 control-label" >Transaction Type: <span class="text-danger text-bold">*</span></label>
                                 <div class="col-md-8 input-group-sm">
                                     <div class="input-group-xs">
                                         <select name="transition_type"  data-placeholder="Select a type" class="select required">
@@ -59,10 +59,10 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group  has-feedback">
-                                <label class="col-lg-3 control-label" >Transition Date: <span class="text-danger text-bold">*</span></label>
+                                <label class="col-lg-3 control-label" >Transaction Date: <span class="text-danger text-bold">*</span></label>
                                 <div class="col-md-8">
                                     <div class="input-group input-group-xs">
-                                        <input type="text" class="form-control datepicker required " placeholder="Transition Date">
+                                        <input type="text" class="form-control datepicker required " placeholder="Transaction Date">
                                         <span class="input-group-addon datepicker"><i class="icon-calendar2"></i></span>
                                     </div>
                                 </div>
@@ -141,7 +141,7 @@
         <!-- Column selectors -->
         <div class="panel border-teal-400">
             <div class="panel-heading bg-teal-300 ">
-                <h5 class="panel-title">Deposit Transition List</h5>
+                <h5 class="panel-title">Deposit Transaction List</h5>
                 <div class="heading-elements">
                     <ul class="icons-list">
                         <li><a data-action="collapse"></a></li>
@@ -197,10 +197,10 @@
             <table class="table table-xs table-bordered  datatable-button-html5-columns ">
                 <thead>
                 <tr>
-                    <th>Transition ID</th>
+                    <th>Transaction ID</th>
                     <th>Member Name</th>
                     <th>Date</th>
-                    <th>Transition Type</th>
+                    <th>Transaction Type</th>
                     <th>Amount</th>
                     <th>Note</th>
                     <th>Action</th>
