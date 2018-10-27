@@ -14,7 +14,8 @@
 						console.log(data);
 						if(data != 0){
 							$('#dps_trans input[name="member_name"]').val(data.mem_name);
-							$('#dps_trans input[name="instalment"]').val(data.inst_amount);
+							$('#dps_trans input[name="inst_amount"]').val(data.inst_amount);
+							$('#dps_trans input[name="crt_balance"]').val(data.balance);
 						}else{
 							swal({
 				              text: "No Data Found",

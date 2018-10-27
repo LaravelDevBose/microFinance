@@ -29,6 +29,7 @@ class MemberController extends Controller
         if($member){
             $data['inst_amount'] = $member->account_info->inst_amount;
             $data['mem_name'] = $member->m_name;
+            $data['balance'] = $member->current_balance->balance;
 
             echo json_encode($data); die();
         }
@@ -125,6 +126,11 @@ class MemberController extends Controller
             $this->account_info_store($request,$member_id);
             $this->emergency_contact_info_store($request,$member_id);
             $this->nominee_info_store($member_id,$request,$n_img_url);
+
+            $balance = new MemberBalance;
+            $balance->member_id= $member_id;
+            $balnace->balance = 0;
+            $balance->save();
 
             //flash Session Success Message
             Session::flash('success', 'New Member Register SuucessFully.');

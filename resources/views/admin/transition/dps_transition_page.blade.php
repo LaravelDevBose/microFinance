@@ -51,7 +51,7 @@
                                     <div class="input-group-xs">
                                         <select name="tran_type" id="tran_type" required data-placeholder="Select a type" class="select required">
                                             <option></option>
-                                            <option value="1">Received</option>
+                                            <option selected value="1">Received</option>
                                             <option value="2">Payment</option>
                                         </select>
                                     </div>
@@ -80,10 +80,11 @@
                                 <label class="col-lg-4 control-label" for="mem_id" >Member: <span class="text-danger text-bold ">*</span></label>
                                 <div class="col-md-7 input-group-sm">
                                     <div class="input-group-xs">
-                                        <select name="mem_id" id="mem_id" required  data-placeholder="Select a type" class="select required">
+                                        <select name="mem_id" id="mem_id" required  data-placeholder="Select a Member" class="select required">
                                             <option></option>
-                                            <option value="1">Received</option>
-                                            <option value="2">Payment</option>
+                                            @foreach($customers as $customer)
+                                            <option value="{{ $customer->id }}">{{ $customer->account_info->mem_code.'-'.$customer->m_name }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
@@ -234,7 +235,7 @@
         <!-- /column selectors -->
 
     </div>
-@endsection
+@endsection 
 
 @section('custom_script')
 @include('admin/ajax/dps_tran_ajax')

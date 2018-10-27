@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Member;
 class TransactionController extends Controller
 {   
 
@@ -12,7 +12,8 @@ class TransactionController extends Controller
     /*======== DPS Transition Page view method==========*/
     public function dps_transition_page(){
 
-        return view('admin.transition.dps_transition_page');
+        $customers = Member::select('id','m_name')->get();
+        return view('admin.transition.dps_transition_page',['customers'=>$customers]);
     }
 
     /*===== Loan Transition Page View Method ==========*/

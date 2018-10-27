@@ -28,4 +28,9 @@ class Member extends Model
     {
     	return $this->hasOne('App\EmergencyInfo', 'member_id', 'id');
     }
+
+    public function current_balance()
+    {
+        return $this->hasOne('App\MemberBalance', 'member_id', 'id');
+    }
 }
