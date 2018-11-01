@@ -34,6 +34,7 @@ Route::prefix('admin')->group( function(){
 
         /*----- Cash Transition Route list---------*/
         Route::get('dps/transition', 'TransactionController@dps_transition_page')->name('dps.transition');
+        Route::post('dps/store', 'TransactionController@dps_transition_store')->name('dps.store');
 
         Route::get('loan/transition', 'TransactionController@loan_transition_page')->name('loan.transition');
 

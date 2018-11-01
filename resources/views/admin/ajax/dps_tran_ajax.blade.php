@@ -43,19 +43,101 @@
 	            });
 			}
 		});
+
+		$('.dps_submit').click(function(){
+			alert('yess');
+			var mem_id = $('#mem_id').val();
+			var amount = $('#amount').val();
+			if(mem_id != 0 && amount != 0 && amount != ''){
+
+				$.ajax({
+					url:'<?= route("dps.store")?>',
+					type:'POST',
+					dataType:'html',
+					data:$('#dps_trans').serialize(),
+					success:function(data){
+						$('#tBody').empty();
+						if(data != 0){
+							$('#tBody').html(data);
+							swal({
+					              text: "DPS Store Successfully..!",
+					              icon: "success",
+					              buttons: false,
+					              timer: 1500,
+					        });
+						}else{
+							swal({
+					              text: "DPS Not Store Successfully..!",
+					              icon: "warning",
+					              buttons: false,
+					              timer: 1500,
+					        });
+						}
+					},error:function(error){
+						console.log(error);
+						swal({
+				              text: "Some Thing Found Wrong",
+				              icon: "warning",
+				              buttons: false,
+				              timer: 1500,
+				        });
+					}
+				});
+			}else{
+				if(mem_id == 0 && mem_id == ''){
+					$('#mem_id').css('border','1px solid red');
+					swal({
+			              text: "Select Member Id First.",
+			              icon: "warning",
+			              buttons: false,
+			              timer: 1500,
+			        });
+			        return false;
+				}
+
+				if(amount == 0 && amount == ''){
+					$('#amount').css('border','1px solid red');
+
+					if(amount == 0){
+						swal({
+				              text: "Zero Is not Valid Amount.",
+				              icon: "warning",
+				              buttons: false,
+				              timer: 1500,
+				        });
+					}else{
+						swal({
+				              text: "Amount Field is Required",
+				              icon: "warning",
+				              buttons: false,
+				              timer: 1500,
+				        });
+					}
+					
+			        return false;
+				}
+				return true;
+			}
+			
+			
+		});
+
+
+
+
+
+
+
+
+
+
+
+
 	});
 
-	$('#dps_submit').click(function(){
-		
-		var res = validation(dps_trans);
-		return false;
-	});
+	
 
-	function validation(argument) {
-
-		alert($('#'+argument+' #member_name').val());
-		return false;
-	}
+	
 </script>
 
 

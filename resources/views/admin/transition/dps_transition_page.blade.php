@@ -18,7 +18,7 @@
 
     <!-- /theme JS files -->
     <style>
-        .select2-selection{
+        .select2-selection{ 
             height: 32px;
         }
         .form-group{
@@ -46,24 +46,21 @@
                         <div class="col-md-1"></div>
                         <div class="col-md-5">
                             <div class="form-group">
-                                <label class="col-lg-4 control-label" for="tran_type" >Transaction Type: <span class="text-danger text-bold">*</span></label>
-                                <div class="col-md-7 input-group-sm">
+                                <label class="col-lg-4 control-label" for="trans_id" >Member Name: </label>
+                                <div class="col-md-7">
                                     <div class="input-group-xs">
-                                        <select name="tran_type" id="tran_type" required data-placeholder="Select a type" class="select required">
-                                            <option></option>
-                                            <option selected value="1">Received</option>
-                                            <option value="2">Payment</option>
-                                        </select>
+                                        <input type="text" name="trans_id" required id="trans_id" class="form-control  " readonly placeholder="Member Name">
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                         <div class="col-md-5">
                             <div class="form-group  has-feedback">
-                                <label class="col-lg-4 control-label" for="tran_date">Transaction Date: <span class="text-danger text-bold">*</span></label>
+                                <label class="col-lg-4 control-label" for="trans_date">Transaction Date: <span class="text-danger text-bold">*</span></label>
                                 <div class="col-md-7">
                                     <div class="input-group input-group-xs">
-                                        <input type="text" name="tran_date" id="tran_date" value="{{ date('d/m/Y') }}" required  class="form-control datepicker required " placeholder="Transaction Date">
+                                        <input type="text" name="trans_date" id="trans_date" value="{{ date('d/m/Y') }}" required  class="form-control datepicker required " placeholder="Transaction Date">
                                         <span class="input-group-addon datepicker"><i class="icon-calendar2"></i></span>
                                     </div>
                                 </div>
@@ -75,12 +72,23 @@
                     <div class="row" >
                         <div class="col-md-1"></div>
                         <div class="col-md-5">
-
                             <div class="form-group">
-                                <label class="col-lg-4 control-label" for="mem_id" >Member: <span class="text-danger text-bold ">*</span></label>
+                                <label class="col-lg-4 control-label" for="payment_type" >Transaction Type: <span class="text-danger text-bold">*</span></label>
                                 <div class="col-md-7 input-group-sm">
                                     <div class="input-group-xs">
-                                        <select name="mem_id" id="mem_id" required  data-placeholder="Select a Member" class="select required">
+                                        <select name="payment_type" id="payment_type" required data-placeholder="Select a type" class="select required">
+                                            <option></option>
+                                            <option selected value="1">Received</option>
+                                            <option value="0">Payment</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label" for="member_id" >Member: <span class="text-danger text-bold ">*</span></label>
+                                <div class="col-md-7 input-group-sm">
+                                    <div class="input-group-xs">
+                                        <select name="member_id" id="member_id" required  data-placeholder="Select a Member" class="select required">
                                             <option></option>
                                             @foreach($customers as $customer)
                                             <option value="{{ $customer->id }}">{{ $customer->account_info->mem_code.'-'.$customer->m_name }}</option>
@@ -139,7 +147,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary pull-right dps_submit">Submit <i class="icon-check position-right"></i></button>
+                    <button type="button" class="btn btn-primary pull-right dps_submit">Submit <i class="icon-check position-right"></i></button>
                 </form>
 
             </div>
@@ -157,50 +165,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="panel-body">
-                <div class="col-md-8">
-                    <div class="row " >
-                        <form action="#"  class="form-horizontal">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="col-lg-4 control-label" >Search: <span class="text-danger text-bold">*</span></label>
-                                <div class="col-md-8 input-group-sm">
-                                    <div class="input-group-xs">
-                                        <div class="input-group input-group-xs">
-                                            <input type="text" class="form-control datepicker" id="rangeDemoFinish" placeholder="Start date">
-                                            <span class="input-group-addon datepicker"><i class="icon-calendar2"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group  has-feedback">
-                                <div class="col-md-12">
-                                    <div class="input-group input-group-xs">
-                                        <input type="text"  class="form-control datepicker" id="rangeDemoFinish" placeholder="End date">
-                                        <span class="input-group-addon datepicker"><i class="icon-calendar2"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-xs btn-info" > <i class="icon-search4 position-left"></i> Search</button>
-                        </div>
-                        </form>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group pull-right">
-                        <button class="btn btn-xs bg-purple"> <i class=" icon-file-pdf position-left"></i> Pdf</button>
-                        <button class="btn btn-xs bg-primary-700"> <i class="icon-printer2 position-left"></i> Print</button>
-
-                    </div>
-
-                </div>
-
-            </div>
+            
             <table class="table table-xs table-bordered  datatable-button-html5-columns ">
                 <thead>
                 <tr>
@@ -213,7 +178,7 @@
                     <th>Action</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="tBody">
                     <tr>
                         <td>Marth</td>
                         <td><a href="#">Enright</a></td>
@@ -240,7 +205,9 @@
 @section('custom_script')
 @include('admin/ajax/dps_tran_ajax')
 
-    <script>$('.datepicker').datepicker({
-            format: 'dd/mm/yyyy',
-        });</script>
+<script>
+    $('.datepicker').datepicker({
+        format: 'dd/mm/yyyy',
+    });    
+</script>
 @endsection
