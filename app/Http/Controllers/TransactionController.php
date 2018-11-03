@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Controller;
 use App\Traits\TransactionHelper;
+use Illuminate\Http\Request;
+use App\Transaction;
 use App\Member;
+use Auth;
 class TransactionController extends Controller
 {   
 
@@ -13,33 +16,33 @@ class TransactionController extends Controller
     
     /*======== DPS Transition Page view method==========*/
     public function dps_transition_page(){
-        $trans_id;
-        if(is_null($cus_id)|| !isset($cus_id)){
-            $cus_code = 'C00001';
+        $trans_info = Transaction::where('trans_type', 'D')->orderBy('id', 'desc')->first();
+        if(is_null($trans_info)|| !isset($trans_info)){
+            $trans_id = 'D00001';
         }else{
 
-            $num = substr($cus_id->cus_code, 1, strlen($cus_id->cus_code));
+            $num = substr($trans_info->trans_id, 1, strlen($trans_info->trans_id));
 
             // var_dump($num); die();
             if($num < 9):
                 $num+=1;
-                $cus_code = 'C0000'.$num;
+                $trans_id = 'D0000'.$num;
             elseif($num < 99):
                 $num+=1;
-                $cus_code = 'C000'.$num;
+                $trans_id = 'D000'.$num;
             elseif($num < 999):
                 $num+=1;
-                $cus_code = 'C00'.$num;
+                $trans_id = 'D00'.$num;
             elseif($num<9999):
                 $num+=1;
-                $cus_code = 'C0'.$num;
+                $trans_id = 'D0'.$num;
             else:
                 $num+=1;
-                $cus_code = 'C'.$num;
+                $trans_id = 'D'.$num;
             endif;
         }
-        $customers = Member::select('id','m_name')->get();
-        return view('admin.transition.dps_transition_page',['customers'=>$customers]);
+        $members = Member::select('id','m_name')->get();
+        return view('admin.transition.dps_transition_page',['members'=>$members, 'trans_id'=>$trans_id]);
     }
 
     /*===== Loan Transition Page View Method ==========*/
@@ -64,23 +67,38 @@ class TransactionController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function dps_transition_store(Request $request)
-    {
-        $dps = new Transition;
-        $dps->trans_type = 'D';
-        $dps->payment_type = $request->payment_type;
-        $dps->trans_date = date('Y-m-d', strtotime(str_replace('/', '-', $request->trans_date)));
-        $dps->member_id = $request->member_id;
-        $dps->amount = $request->amount;
-        $dps->short_note = $request->short_note;
-        $dps->status = 'a';
-        $dps->created_by = Auth::user()->username;
-        $dps->updated_by = Auth::user()->username;
-        $dps->save();
+    {   
+        $report = Validator::make($request->all(),[
+            'trans_id' => 'required|string',
+            'payment_type' => 'required',
+            'trans_date' => 'required',
+            'member_id' => 'required|integer',
+            'amount' => 'required|integer',
+        ]);
 
-        $this->current_balance_update($request->member_id,$request->amount,$request->payment_type);
+        if($report->passes()){
+            $dps = new Transaction;
+            $dps->trans_id = $request->trans_id;
+            $dps->trans_type = 'D';
+            $dps->payment_type = $request->payment_type;
+            $dps->trans_date = date('Y-m-d', strtotime(str_replace('/', '-', $request->trans_date)));
+            $dps->member_id = $request->member_id;
+            $dps->amount = $request->amount;
+            $dps->short_note = $request->short_note;
+            $dps->status = 'a';
+            $dps->created_by = Auth::user()->username;
+            $dps->updated_by = Auth::user()->username;
+            $dps->save();
 
-        $trans= Transition::where('trans_type','D')->where('status', 'a')->orderBy('id', 'desc')->get();
-        return view('admin.transition.dps_trans_tbl', ['trans'=>$trans]);
+            $this->current_balance_update($request->member_id,$request->amount,$request->payment_type);
+
+            $dps_trans= Transaction::where('trans_type','D')->where('status', 'a')->orderBy('id', 'desc')->get();
+            return view('admin.transition.dps_trans_tbl', ['dps_trans'=>$dps_trans]);
+        }else{
+            return redirect()->back()->withErrors($report);
+        }
+
+        
     }
 
     /**

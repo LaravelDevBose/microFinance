@@ -46,10 +46,10 @@
                         <div class="col-md-1"></div>
                         <div class="col-md-5">
                             <div class="form-group">
-                                <label class="col-lg-4 control-label" for="trans_id" >Member Name: </label>
+                                <label class="col-lg-4 control-label" for="trans_id" >Transaction Id: </label>
                                 <div class="col-md-7">
                                     <div class="input-group-xs">
-                                        <input type="text" name="trans_id" required id="trans_id" class="form-control  " readonly placeholder="Member Name">
+                                        <input type="text" name="trans_id" required id="trans_id" value="{{ $trans_id }}" class="form-control  " readonly placeholder="Transaction Id">
                                     </div>
                                 </div>
                             </div>
@@ -89,10 +89,12 @@
                                 <div class="col-md-7 input-group-sm">
                                     <div class="input-group-xs">
                                         <select name="member_id" id="member_id" required  data-placeholder="Select a Member" class="select required">
-                                            <option></option>
-                                            @foreach($customers as $customer)
-                                            <option value="{{ $customer->id }}">{{ $customer->account_info->mem_code.'-'.$customer->m_name }}</option>
-                                            @endforeach
+                                            <option value="0">Select A member </option>
+                                            @if(isset($members) && $members)
+                                                @foreach($members as $member)
+                                                <option value="{{ $member->id }}">{{ $member->account_info->mem_code.'-'.$member->m_name }}</option>
+                                                @endforeach
+                                            @endif
                                         </select>
                                     </div>
                                 </div>
@@ -111,7 +113,7 @@
                                 <label class="col-lg-4 control-label" for="crt_balance">Current Balance: </label>
                                 <div class="col-md-7">
                                     <div class="input-group-xs">
-                                        <input type="text" name="crt_balance" id="crt_balance" class="form-control  " readonly placeholder="Member Name">
+                                        <input type="text" name="crt_balance" id="crt_balance" class="form-control  " readonly placeholder="Current Balance">
                                     </div>
                                 </div>
                             </div>
@@ -179,8 +181,10 @@
                 </tr>
                 </thead>
                 <tbody id="tBody">
+                    @if(isset($dps_trans) && $dps_trans)
+                    @foreach($dps_trans as $trans)
                     <tr>
-                        <td>Marth</td>
+                        <td>{{ $trans->trans_id }}</td>
                         <td><a href="#">Enright</a></td>
                         <td>Traffic Court Referee</td>
                         <td>22 Jun 1972</td>
@@ -194,6 +198,8 @@
                             </ul>
                         </td>
                     </tr>
+                    @endforeach
+                    @endif
                 </tbody>
             </table>
         </div>

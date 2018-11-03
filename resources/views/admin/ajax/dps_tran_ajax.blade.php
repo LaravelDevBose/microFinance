@@ -1,7 +1,9 @@
 
 <script>
 	$( document ).ready(function() {
-	    $('#dps_trans select[name="mem_id"]').change(function(e){
+
+	    $('#dps_trans select[name="member_id"]').change(function(e){
+	    	
 			var mem_id = e.target.value;
 			$('#dps_trans input[name="member_name"]').val('');
 			if(mem_id >=1){
@@ -45,9 +47,10 @@
 		});
 
 		$('.dps_submit').click(function(){
-			alert('yess');
-			var mem_id = $('#mem_id').val();
+
+			var mem_id = $('#member_id').val();
 			var amount = $('#amount').val();
+			alert(mem_id);
 			if(mem_id != 0 && amount != 0 && amount != ''){
 
 				$.ajax({
@@ -63,14 +66,14 @@
 					              text: "DPS Store Successfully..!",
 					              icon: "success",
 					              buttons: false,
-					              timer: 1500,
+					              timer: 1800,
 					        });
 						}else{
 							swal({
 					              text: "DPS Not Store Successfully..!",
 					              icon: "warning",
 					              buttons: false,
-					              timer: 1500,
+					              timer: 1800,
 					        });
 						}
 					},error:function(error){
@@ -79,38 +82,37 @@
 				              text: "Some Thing Found Wrong",
 				              icon: "warning",
 				              buttons: false,
-				              timer: 1500,
+				              timer: 1800,
 				        });
 					}
 				});
 			}else{
-				if(mem_id == 0 && mem_id == ''){
-					$('#mem_id').css('border','1px solid red');
+				if(mem_id == 0 || mem_id == ''){
+					$('#member_id').css('border','1px solid red');
 					swal({
 			              text: "Select Member Id First.",
 			              icon: "warning",
 			              buttons: false,
-			              timer: 1500,
+			              timer: 1800,
 			        });
 			        return false;
 				}
 
 				if(amount == 0 && amount == ''){
 					$('#amount').css('border','1px solid red');
-
 					if(amount == 0){
 						swal({
 				              text: "Zero Is not Valid Amount.",
 				              icon: "warning",
 				              buttons: false,
-				              timer: 1500,
+				              timer: 1800,
 				        });
 					}else{
 						swal({
 				              text: "Amount Field is Required",
 				              icon: "warning",
 				              buttons: false,
-				              timer: 1500,
+				              timer: 1800,
 				        });
 					}
 					

@@ -26,7 +26,7 @@ trait TransactionHelper
         $bla_update->balance = $curt_balance;
         $bla_update->save();
 
-        return Ture;
+        return 1;
         
     }
 }
